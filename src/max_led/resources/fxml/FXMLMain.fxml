@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="257.0" prefWidth="450.0" style="-fx-background-color: #404040;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="max_led.FXMLMainController">
+   <children>
+      <Label fx:id="instructLbl" layoutX="88.0" layoutY="42.0" text="Enter number of LEDs" textFill="#ffcc00" />
+      <TextField fx:id="numOfLEDTF" layoutX="67.0" layoutY="98.0" style="-fx-background-color: #ffd11a;">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <Button fx:id="enterBtn" layoutX="199.0" layoutY="138.0" mnemonicParsing="false" onAction="#enterBtnAction" style="-fx-background-color: #282828;" text="Enter" textFill="#ffc11a">
+         <effect>
+            <Blend />
+         </effect>
+      </Button>
+      <Button fx:id="backBtn" layoutX="135.0" layoutY="138.0" mnemonicParsing="false" onAction="#backBtnAction" style="-fx-background-color: #282828;;" text="Back" textFill="#ffc800">
+         <effect>
+            <Blend />
+         </effect>
+      </Button>
+      <Button fx:id="resetBtn" layoutX="67.0" layoutY="138.0" mnemonicParsing="false" onAction="#alert" snapToPixel="false" style="-fx-background-color: #282828;" text="Reset" textFill="#ffc800">
+         <effect>
+            <Blend />
+         </effect>
+      </Button>
+      <TextArea fx:id="LEDTA" editable="false" layoutX="286.0" layoutY="14.0" prefHeight="188.0" prefWidth="150.0" style="-fx-background-color: #ffcc00;" text="&#10;">
+         <effect>
+            <InnerShadow color="#030200" height="90.18" radius="43.8125" width="87.07" />
+         </effect>
+      </TextArea>
+      <Text fx:id="max_LED" layoutX="119.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Max LED " textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#ffcc00" height="11.67" radius="5.335" width="11.67" />
+         </effect>
+      </Text>
+      <Label fx:id="notifLbl" layoutX="71.0" layoutY="181.0" textFill="#249d02" />
+      <Button fx:id="randomBtn" disable="true" layoutX="288.0" layoutY="214.0" mnemonicParsing="false" onAction="#randomBtnAction" prefHeight="31.0" prefWidth="150.0" style="-fx-background-color: #282828;" text="Randomize LEDs" textFill="#ffc11a">
+         <effect>
+            <Blend />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

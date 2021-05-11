@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="193.0" prefWidth="406.0" style="-fx-background-color: #404040;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="max_led.FXMLMainController">
+   <children>
+      <Button fx:id="yesBtn" layoutX="88.0" layoutY="125.0" mnemonicParsing="false" onAction="#yesBtnAction" style="-fx-background-color: #282828;" text="Yes" textFill="#ffcc00" />
+      <Button fx:id="noBtn" layoutX="261.0" layoutY="125.0" mnemonicParsing="false" onAction="#noBtnAction" style="-fx-background-color: #282828;" text="No" textFill="#ffcc00" />
+      <Label layoutX="48.0" layoutY="54.0" text="Are you sure you want to reset everything?" textFill="#ffcc00" />
+   </children>
+</AnchorPane>
